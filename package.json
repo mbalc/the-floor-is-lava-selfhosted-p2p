@@ -14,15 +14,16 @@
     "express": "^4.14.0",
     "lance-gg": "^2.0.5",
     "nodemon": "^1.17.3",
+    "pixi-layers": "^0.1.9",
+    "pixi.js": "4.7.3",
     "query-string": "^4.2.3",
     "socket.io": "^4.1.2",
-    "pixi.js": "4.7.3",
-    "pixi-layers": "^0.1.9",
+    "trystero": "^0.25.4",
     "webpack": "^3.8.1"
   },
   "devDependencies": {
-    "babelify": "^7.3.0",
     "babel-cli": "^6.26.0",
+    "babelify": "^7.3.0",
     "eslint": "^3.16.1",
     "eslint-config-google": "^0.7.1"
   },
@@ -30,6 +31,7 @@
     "start": "babel-node main.js --presets es2015",
     "start-debug": "babel-node main.js --inspect --debug-brk --presets es2015",
     "nodemon": "nodemon main.js --exec babel-node --presets es2015",
+    "start-static": "python3 -m http.server 8080 --directory .",
     "postinstall": "webpack --display-error-details",
     "build": "webpack",
     "dev": "webpack --watch",

@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 
 module.exports = {
-    entry: './src/client/clientEntryPoint.js',
+    entry: './src/browser/browserEntryPoint.js',
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'
